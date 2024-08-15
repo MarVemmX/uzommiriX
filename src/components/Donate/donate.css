@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/**CSS VARIABLES**/
+:root{
+    --black: #000000;
+    --red: #c1392b; 
+    --white: #ffffff;
+}
+/*DONATE*/
+.donate-hero{
+    height: 60vh;
+    display: flex;
+    justify-content: center; /*horizontally centered*/
+    align-items: center; /*horizontally centered*/
+    /* border: 1px solid black; */
+}
+.donate-content{
+    margin: 0 auto; /* Horizontally center */
+    text-align: center;
+}
+.donate-content h1{
+    font-size: 64px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+.donate-content p{
+    font-size: 40px;
+    padding-bottom: 8px;
+}
+.donate-content p:nth-child(2){
+    font-style: italic;
+}
+.donate-content p:nth-child(3){
+    font-weight: bold;
+}
+.donate-content p:nth-child(4){
+    padding: 10px 20px;
+    background-color: var(--red);
+    color: var(--white);
+}
+.donate-content p:nth-child(4) .icon{
+   cursor: pointer;
+   position: relative;
+   left: 20px
+}
+.donate-content p a{
+    color: var(--red);
+    
+}
+@media only screen and (max-width: 760px) {
+    .donate-hero{
+       padding: 0 20px;
+       height: 90vh;
+    }
+    .donate-content{
+        text-align: left;
+    }
+    .donate-content h1{
+        font-size: 48px;
+    }
+    .donate-content p{
+        font-size: 32px;
+    }
+}
+/*TOAST*/
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}

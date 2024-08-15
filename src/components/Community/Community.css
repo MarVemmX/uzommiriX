@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/**CSS VARIABLES**/
+:root{
+    --black: #000000;
+    --red: #c1392b; 
+}
+/**COMMUNITY-SERVICE**/
+.comm-hero{
+    text-align: center;
+    padding: 20px 0;
+}
+.comm-hero h1{
+    font-weight: bold;
+    font-size: 64px;
+}
+.comm-hero p{
+    font-size: 32px;
+    padding-top: 8px;
+}
+@media only screen and (max-width: 760px) {
+    .comm-hero{
+        text-align: left;
+        padding: 20px 20px;
+    }
+    .comm-hero h1{
+        font-size: 32px;
+    }
+    .comm-hero p{
+        font-size: 16px;
+        padding-top: 4px;
+    } 
+}
+/**PHOTO ROLL**/
+.photo-roll{
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo-wrap{
+    flex-basis: 16.6667%;
+    position: relative;
+    display: flex;
+}
+.photo-roll img{
+    width: 100%;
+}
+/* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--red);
+    opacity: 120%;
+} */
+@media only screen and (max-width: 760px) {
+    .photo-wrap{
+     flex-basis: 33.3333%;
+    }
+}
+/**TEXT-AREA**/
+.vessel{
+    padding: 20px 60px;
+}
+.vessel-text{
+    text-align: left;
+    line-height: 24px;
+}
+.vessel-text h3{
+    font-size: 24px;
+    font-style: italic;
+    padding-bottom: 16px;
+}
+.vessel-text p{
+    font-size: 20px;
+}
+.vessel-text p a{
+    text-decoration: underline;
+    color: var(--red);
+}
+.video-container{
+    max-width: 100%; /* Ensures it doesn't exceed the container's width */
+    overflow: hidden; /* Hides any overflow content */
+}
+.video-container iframe{
+    padding: 10px 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;  /* Ensures the video covers the entire area, cropping if necessary */
+}
+@media only screen and (max-width: 760px) {
+    .vessel{
+        padding: 20px 20px;
+    }
+    .vessel-text h3{
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+    .vessel-text p{
+        font-size: 14px;
+    }
+    .video-container iframe{
+        height: 50vh;
+    }
+}
+/*QUAD-PHOTO ROLL*/
+.qphoto-roll{
+    display: flex;
+    flex-wrap: wrap;
+}
+.qphoto-wrap{
+    flex-basis: 25%;
+    position: relative;
+    display: flex;
+}
+.qphoto-roll img{
+    width: 100%;
+}
+

@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/**CSS VARIABLES**/
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --red: #c1392b; 
+}
+/*YOUNGA HEADER*/
+.younga-hero{
+    text-align: center;
+    padding: 20px 0;
+}
+.younga-hero h1{
+    font-weight: bold;
+    font-size: 64px;
+}
+@media only screen and (max-width: 760px) {
+    .younga-hero{
+        text-align: left;
+        padding: 20px 20px;
+    }
+    .younga-hero h1{
+        font-size: 32px;
+    }
+}
+/*YOUNGA HERO*/
+.yaPhoto-roll{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+}
+.yaPhoto-wrapa{
+    flex-basis: 30%;
+    position: relative;
+    display: flex;
+}
+.yaPhoto-wrapb{
+    flex-basis: 70%;
+    position: relative;
+    display: flex;
+}
+.yaPhoto-roll img{
+    width: 100%;
+   
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--red);
+    opacity: 60%;
+}
+
+@media only screen and (max-width: 760px) {
+    .yaPhoto-roll{
+        padding: 0 20px;
+    }
+}
+/*BLOOM TEXT-AREA*/
+.bloom-text{
+    padding: 20px  60px;
+    line-height: 24px;
+}
+.bloom-text h3{
+    font-size: 24px;
+    font-style: italic;
+    padding-bottom: 16px;
+}
+.bloom-text p{
+    font-size: 20px;
+}
+@media only screen and (max-width: 760px) {
+    .bloom-text{
+        padding: 20px 20px;
+    }
+    .bloom-text h3{
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    .bloom-text p{
+        font-size: 14px;
+    }
+}
+/*UNIV*/
+.univ-vessel{
+    padding: 30px 60px;
+    background: var(--black);
+}
+.univ-vessel-text{
+    text-align: left;
+    line-height: 24px;
+    color: var(--white);
+}
+.univ-vessel-text h3{
+    font-size: 40px;
+    font-weight: 400;
+    padding-bottom: 24px;
+}
+.univ-vessel-text p{
+    font-size: 20px;
+}
+.video-container{
+    max-width: 100%; /* Ensures it doesn't exceed the container's width */
+    overflow: hidden; /* Hides any overflow content */
+}
+.video-container iframe{
+    padding: 15px 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;  /* Ensures the video covers the entire area, cropping if necessary */
+}
+@media only screen and (max-width: 760px) {
+    .univ-vessel{
+        padding: 20px 20px;
+    }
+    .univ-vessel-text h3{
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+    .univ-vessel-text p{
+        font-size: 14px;
+    }
+    .video-container iframe{
+        height: 50vh;
+    }
+}
+/*UNIV THEMES*/
+.themes-container{
+    padding: 20px 60px;
+}
+.themes-text{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.text-area{
+    text-align: left;
+    flex-basis: 70%;
+}
+.text-area h4{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+.text-area p{
+    font-size: 20px;
+}
+.text-area p:nth-child(8){
+    padding-top: 40px;
+}
+.text-area p a{
+    color: var(--red);
+}
+.image-area{
+    flex-basis: 30%;
+}
+@media only screen and (max-width: 982px){
+    .text-area{
+        flex-basis: 90%;
+    } 
+    .image-area{
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .themes-container{
+        padding: 20px 20px;
+    }
+    .text-area, .image-area{
+        flex-basis: 100%;
+    }
+    .text-area p{
+        font-size: 16px;
+    }
+    .text-area h4{
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    .text-area p:nth-child(8){
+        padding-top: 20px;
+    }
+}
+.photo-row {
+    display: flex;
+}
+.photo-wrap {
+    flex: 2;
+    position: relative;
+}
+.photo-stack {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
